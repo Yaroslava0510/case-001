@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#11100f">
+<title>Архив №001 — Дело, которого не должно быть</title>
+<style>
+:root{--bg:#100f0e;--panel:#191715;--paper:#e6dcc8;--muted:#a99e8d;--red:#7e292d;--red2:#a74445;--line:#39312a;--gold:#b89b69}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% -20%,#30231f 0%,#151210 42%,#0d0c0b 100%);color:var(--paper);font-family:Georgia,"Times New Roman",serif;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
+header{border-bottom:1px solid var(--line);padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:12px;letter-spacing:.16em;font:11px Arial,sans-serif;color:var(--muted)}
+.brand{color:var(--paper);font-weight:bold}.status{color:#b56c66}
+main{width:min(760px,calc(100% - 32px));margin:0 auto;padding:48px 0 80px}
+.eyebrow{font:11px Arial,sans-serif;letter-spacing:.28em;color:var(--red2);text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(34px,8vw,62px);font-weight:normal;line-height:1.02;margin:0 0 18px;letter-spacing:-.035em}
+h2{font-size:clamp(24px,5vw,34px);font-weight:normal;margin:0 0 16px}
+h3{font-size:18px;font-weight:normal;color:#d5c5a8;margin:24px 0 8px}
+p{font-size:17px;line-height:1.72;color:#d0c5b4}
+.lead{font-size:19px;color:#e4d8c5}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:30px 0}
+.stamp{display:inline-block;border:1px solid var(--red2);color:#c47a73;padding:7px 11px;letter-spacing:.18em;font:10px Arial,sans-serif;transform:rotate(-2deg);margin:10px 0 22px}
+.panel{background:linear-gradient(145deg,rgba(36,30,25,.96),rgba(22,20,18,.96));border:1px solid #44382d;padding:clamp(20px,5vw,34px);box-shadow:0 18px 55px #0007;margin:24px 0;position:relative}
+.panel:before{content:"";position:absolute;inset:7px;border:1px solid #ffffff0b;pointer-events:none}
+.meta{font:11px Arial,sans-serif;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+label{display:block;font:12px Arial,sans-serif;letter-spacing:.12em;color:#c7b69c;margin:20px 0 8px}
+input,textarea{width:100%;background:#100f0e;border:1px solid #5a4939;color:var(--paper);padding:14px 15px;font:16px Georgia,serif;border-radius:0;outline:none}
+input:focus,textarea:focus{border-color:var(--gold)}
+textarea{min-height:105px;resize:vertical}
+button{background:var(--red);border:1px solid #a34b4c;color:#f3e9d8;padding:14px 20px;font:11px Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;cursor:pointer;margin-top:18px;transition:.2s}
+button:hover{background:#963b3f;transform:translateY(-1px)}
+button.secondary{background:transparent;border-color:#695746;color:#d8c9b1}
+.hidden{display:none!important}
+.notice{border-left:2px solid var(--red2);padding:10px 15px;color:#c9bba8;font-size:15px;line-height:1.6;background:#7e292d12;margin:18px 0}
+.success{border-color:#9b8b60;background:#9b8b6014}
+.paper{background:#d9ceb8;color:#29231d;padding:24px;box-shadow:4px 7px 18px #0008;margin:20px 0}
+.paper p,.paper li{color:#383027;font-size:16px}
+.paper .meta{color:#6f5d48}
+ul{padding-left:21px;line-height:1.8;color:#d0c5b4}
+.small{font-size:13px;color:var(--muted);line-height:1.6}
+.nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:26px}
+.seal{width:76px;height:76px;border:2px solid #8c383b;border-radius:50%;display:grid;place-items:center;color:#b65d5d;font:11px Arial,sans-serif;letter-spacing:.1em;transform:rotate(-12deg);margin:22px 0}
+footer{text-align:center;border-top:1px solid var(--line);padding:24px;color:#756b5e;font:10px Arial,sans-serif;letter-spacing:.15em}
+.video-slot{border:1px dashed #665545;padding:22px;text-align:center;color:#a99e8d;font:12px Arial,sans-serif;letter-spacing:.1em;margin:20px 0}
+a{color:#c69d75}
+@media(max-width:520px){header{font-size:9px;padding:15px}main{padding-top:34px}.panel{padding:20px 17px}p{font-size:16px}}
+</style>
+</head>
+<body>
+<header><div class="brand">ОТДЕЛ ЗАКРЫТЫХ МАТЕРИАЛОВ</div><div class="status">ДОСТУП: ОГРАНИЧЕН</div></header>
+<main>
+<section id="home">
+ <div class="eyebrow">Архивная система · запись 001</div>
+ <h1>Дело, которого<br>не должно быть</h1>
+ <div class="stamp">CONFIDENTIAL</div>
+ <p class="lead">Некоторые документы исчезают. Некоторые — переписывают. Но иногда в архиве остаётся то, что невозможно удалить.</p>
+ <div class="rule"></div>
+ <div class="panel">
+  <div class="meta">ВХОДЯЩЕЕ СООБЩЕНИЕ · 26.10.2026</div>
+  <p>Если вы открыли эту страницу, значит, коробка дошла до вас. Внутри находятся материалы расследования, которое официально никогда не проводилось.</p>
+  <p>Ваша задача — установить, кто организовал исчезновение оригинала дела А-17 в октябре 2018 года, и объяснить, какие документы доказывают его причастность.</p>
+  <div class="notice">Не торопитесь. В архиве есть документы, которые противоречат друг другу. Именно это и важно.</div>
+  <button onclick="show('case')">ОТКРЫТЬ ДЕЛО А-17</button>
+ </div>
+ <p class="small">Система предназначена для участников расследования. Все организации, персонажи и события дела А-17 вымышлены.</p>
+</section>
+
+<section id="case" class="hidden">
+ <div class="eyebrow">Раздел I · расследование 2018 года</div>
+ <h2>Кто забрал оригинал?</h2>
+ <p>Изучите документы из коробки. Затем внесите имя человека, который, по вашей версии, организовал исчезновение оригинала дела А-17.</p>
+ <div class="paper">
+  <div class="meta">ФОРМА ИТОГОВОГО ЗАКЛЮЧЕНИЯ</div>
+  <p><strong>Дело:</strong> А-17</p>
+  <p><strong>Событие:</strong> исчезновение оригинала и подмена неполной копией</p>
+  <p><strong>Дата обнаружения:</strong> октябрь 2018 года</p>
+ </div>
+ <label for="suspect">ИМЯ ПОДОЗРЕВАЕМОГО</label>
+ <input id="suspect" placeholder="Введите имя и фамилию">
+ <label for="reason">ОБОСНОВАНИЕ ВЕРСИИ</label>
+ <textarea id="reason" placeholder="Какие улики указывают на этого человека?"></textarea>
+ <button onclick="checkAnswer()">ПЕРЕДАТЬ РЕЗУЛЬТАТЫ</button>
+ <div id="wrong" class="notice hidden"></div>
+ <div id="right" class="panel hidden">
+  <div class="stamp">ВЕРСИЯ ПОДТВЕРЖДЕНА</div>
+  <h2>Александр Моррис</h2>
+  <p>Ваш вывод совпадает с материалами закрытой проверки. Но прежде чем открыть следующую часть, ознакомьтесь с признанием.</p>
+  <div class="video-slot" id="video1">МЕСТО ДЛЯ ВИДЕО 1 · ПРИЗНАНИЕ МОРРИСА<br><span class="small">Видео можно добавить позже, заменив этот блок ссылкой или плеером.</span></div>
+  <p>Моррис знал, что коллекция семьи Вейл была передана только на временное хранение. Он представлял её как собственность своего фонда и организовал исчезновение А-17, чтобы скрыть обстоятельства происхождения материалов и не допустить возвращения коллекции семье.</p>
+  <div class="notice success">Но А-17 — не начало этой истории. Это только её последняя глава. Посмотрите на номер дела: 001.</div>
+  <button onclick="show('daniel')">ПОЛУЧИТЬ СООБЩЕНИЕ</button>
+ </div>
+</section>
+
+<section id="daniel" class="hidden">
+ <div class="eyebrow">Входящее сообщение · неизвестный отправитель</div>
+ <h2>Вы нашли не всё</h2>
+ <div class="panel">
+  <div class="meta">ДАНИЭЛЬ ВЕЙЛ · СООБЩЕНИЕ</div>
+  <p>Вы справились с делом А-17. Но я должен признаться: в коробке не было всех материалов.</p>
+  <p>В 2024 году я нашёл фрагмент первоначального реестра Палаты. Я не включил его в отправленные документы. Мне нужно было понять, можно ли доверять тем, кто будет расследовать это дело.</p>
+  <p>Меня зовут Даниэль Вейл. Моя семья связана с этой историей гораздо дольше, чем вы могли предположить.</p>
+  <div class="video-slot">МЕСТО ДЛЯ ВИДЕО 2 · СООБЩЕНИЕ ДАНИЭЛЯ</div>
+  <button onclick="show('archive')">ПЕРЕЙТИ К АРХИВУ 1908 ГОДА</button>
+ </div>
+</section>
+
+<section id="archive" class="hidden">
+ <div class="eyebrow">Раздел II · первоначальный архив</div>
+ <h2>Палата, 1908 год</h2>
+ <p>До появления Ордена существовало закрытое собрание, которое называли Палатой. Его участники не использовали имена в открытом реестре — только обозначения.</p>
+ <div class="paper">
+  <div class="meta">РЕЕСТР №001 · 17 ОКТЯБРЯ 1908</div>
+  <p><strong>I — Наблюдатель.</strong> Сведения о происхождении материалов.</p>
+  <p><strong>II — Исследователь.</strong> Результаты изучения.</p>
+  <p><strong>III — Регистратор.</strong> Учёт и движение документов.</p>
+  <p><strong>IV — Хранитель.</strong> Первоначальный реестр и ключ к каталогу.</p>
+  <p><em>Имена могут быть утрачены. Записи могут быть изменены. Но порядок должен сохраниться.</em></p>
+ </div>
+ <p>Семья Вейл была связана с объектом IV-03 ещё до создания Палаты. Артур Вейл стал Хранителем, чтобы сохранить хотя бы часть контроля над судьбой семейного материала.</p>
+ <div class="notice">В письме Артура говорится: ключ не должен оказаться у одного человека без ведома остальных. Каталог хранился отдельно от открытого архива.</div>
+ <h3>Вопрос для расследования</h3>
+ <p>Какую роль выполнял участник III и почему его доступ был приостановлен?</p>
+ <button onclick="show('betrayal')">ИЗУЧИТЬ СЛЕДЫ ПРЕДАТЕЛЬСТВА</button>
+</section>
+
+<section id="betrayal" class="hidden">
+ <div class="eyebrow">Материал · 29 декабря 1908</div>
+ <h2>Регистратор</h2>
+ <div class="paper">
+  <div class="meta">СЛУЖЕБНАЯ ЗАПИСЬ</div>
+  <p>При сверке двух экземпляров реестра обнаружены расхождения. Изменения внесены с использованием доступа участника III.</p>
+  <p>Доступ Регистратора приостановлен до выяснения обстоятельств.</p>
+  <p><strong>Рукописная пометка:</strong> «Не восстанавливать прежний порядок без согласия Хранителя».</p>
+ </div>
+ <p>Регистратор изменял записи и собирал сведения о частях каталога. После обнаружения расхождений остальные участники разделили доступ к материалам. Его дальнейшая судьба неизвестна.</p>
+ <p>Но следы изменений сохранились. Спустя десятилетия их попытались восстановить.</p>
+ <button onclick="show('echo')">ОТКРЫТЬ ПРОЕКТ «ЭХО»</button>
+</section>
+
+<section id="echo" class="hidden">
+ <div class="eyebrow">Раздел III · 1931 год</div>
+ <h2>Проект «ЭХО»</h2>
+ <div class="paper">
+  <div class="meta">СЛУЖЕБНАЯ ЗАПИСЬ · 4 ФЕВРАЛЯ 1931</div>
+  <p>Цель проекта — восстановление сведений о документах, удалённых или изменённых в 1908 году.</p>
+  <p>Работа ведётся по четырём первоначальным разделам Палаты.</p>
+  <p><strong>Пометка:</strong> «Регистратор оставил больше, чем мы думали».</p>
+ </div>
+ <p>В другом документе проекта сказано: «Разделение было временной мерой. Доступ должен быть восстановлен».</p>
+ <p>Похоже, история Палаты не закончилась после отстранения Регистратора. Кто-то продолжал искать способ собрать каталог воедино.</p>
+ <div class="video-slot">МЕСТО ДЛЯ ВИДЕО 3 · ИСТОРИЯ СЕМЬИ ВЕЙЛ</div>
+ <button onclick="show('iv03')">ПРОВЕРИТЬ ОБЪЕКТ IV-03</button>
+</section>
+
+<section id="iv03" class="hidden">
+ <div class="eyebrow">Раздел IV · семейный каталог</div>
+ <h2>IV-03 и V-17</h2>
+ <div class="paper">
+  <div class="meta">ФРАГМЕНТ КАТАЛОГА</div>
+  <p><strong>Обозначение:</strong> IV-03</p>
+  <p><strong>Первоначальный владелец:</strong> семья Вейл</p>
+  <p><strong>Период:</strong> до 1908 года</p>
+  <p><strong>Описание:</strong> лист с неизвестными знаками и схемами. Значение не устанавливается при изучении отдельно от других материалов.</p>
+  <p><strong>Примечание:</strong> временно передан семье Вейл.</p>
+ </div>
+ <p>В 2016 году коллекция семьи поступила на временное хранение в Орден. Тогда объект IV-03 получил новое обозначение — V-17.</p>
+ <p>Так один и тот же объект оказался частью двух историй: истории семьи Вейл и истории Ордена.</p>
+ <div class="notice">Оригинальный каталог пока не найден. Известно только, что он никогда не находился в одном месте.</div>
+ <div class="video-slot">МЕСТО ДЛЯ ВИДЕО 4 · ФИНАЛЬНОЕ СООБЩЕНИЕ</div>
+ <button onclick="show('final')">ЗАВЕРШИТЬ РАССЛЕДОВАНИЕ</button>
+</section>
+
+<section id="final" class="hidden">
+ <div class="eyebrow">Статус дела · обновлён</div>
+ <h2>Расследование приостановлено</h2>
+ <div class="seal">ARCHIVE<br>001</div>
+ <p class="lead">Вы восстановили часть истории Палаты. Но каталог по-прежнему не найден.</p>
+ <p>Даниэль оставил последнее сообщение:</p>
+ <div class="paper"><p>«Хранитель оставил ключ там, где история семьи пересекается с настоящим. Если вы дошли до этого места, значит, теперь вы знаете достаточно, чтобы понять, где искать».</p></div>
+ <p>На этом цифровая часть дела заканчивается. Дальше ищите ответ среди предметов и мест, которые связаны с семьёй Вейл.</p>
+ <div class="stamp">ДОСЬЕ ЗАКРЫТО · ВРЕМЕННО</div>
+ <button class="secondary" onclick="show('home')">ВЕРНУТЬСЯ К НАЧАЛУ</button>
+</section>
+</main>
+<footer>ОРДЕН ПАЛАТЫ · АРХИВ №001 · ВСЕ СОБЫТИЯ И ПЕРСОНАЖИ ВЫМЫШЛЕНЫ</footer>
+<script>
+const sections=['home','case','daniel','archive','betrayal','echo','iv03','final'];
+function show(id){sections.forEach(s=>document.getElementById(s).classList.toggle('hidden',s!==id));window.scrollTo({top:0,behavior:'smooth'});}
+function checkAnswer(){
+ const value=document.getElementById('suspect').value.trim().toLowerCase().replaceAll('ё','е');
+ const accepted=['александр моррис','моррис','alexander morris','morris'];
+ const right=accepted.includes(value);
+ const wrong=document.getElementById('wrong'),success=document.getElementById('right');
+ success.classList.add('hidden');wrong.classList.add('hidden');
+ if(right){success.classList.remove('hidden');}
+ else{
+  wrong.innerHTML='Версия пока не подтверждена. Перепроверьте документы о временном хранении коллекции, служебную записку Грея и показания Елены Восс. <br><strong>Подсказка:</strong> ищите человека, которому было важно скрыть, кому на самом деле принадлежала коллекция.';
+  wrong.classList.remove('hidden');
+ }
+}
+</script>
+</body>
+</html>
